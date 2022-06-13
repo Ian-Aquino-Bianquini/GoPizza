@@ -1,9 +1,9 @@
 {
-  "name": "pizzaria",
-  "displayName": "pizzaria",
+  "name": "GoPizza",
+  "displayName": "GoPizza",
   "expo": {
-    "name": "pizzaria",
-    "slug": "pizzaria",
+    "name": "GoPizza",
+    "slug": "GoPizza",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
@@ -23,7 +23,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "com.devricardo.pizzaria"
+      "package": "com.devricardo.gopizza"
     }
   }
 }
