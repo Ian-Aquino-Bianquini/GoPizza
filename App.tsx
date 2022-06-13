@@ -1,8 +1,8 @@
 import { DMSans_400Regular, useFonts } from '@expo-google-fonts/dm-sans';
 import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 import { AuthProvider } from '@hooks/auth';
-import SignIn from '@screens/SignIn';
-// import AppLoading from 'expo-app-loading';
+import Product from '@screens/Product';
+import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
@@ -14,16 +14,16 @@ export default function App() {
     DMSerifDisplay_400Regular
   });
 
-  // if(!fontsLoaded) {
-  //   return (<AppLoading />)
-  // }
+  if(!fontsLoaded) {
+    return (<AppLoading />)
+  }
 
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style='light' translucent backgroundColor='transparent'/>
       
       <AuthProvider>
-        <SignIn />
+        <Product />
       </AuthProvider>
     </ThemeProvider> 
   );
