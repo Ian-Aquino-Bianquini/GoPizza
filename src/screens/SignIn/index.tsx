@@ -4,7 +4,7 @@ import { Input } from "@components/Input";
 import { useAuth } from '@hooks/auth';
 import React, { useState } from "react";
 import { KeyboardAvoidingView, Platform } from "react-native";
-import { Brand, Container, Content, ForgotPasswordButton, ForgotPasswordLabel, Title } from "./styled";
+import { Brand, Container, Content, ForgotPasswordButton, ForgotPasswordLabel, Title } from "./styles";
 
 export default function SignIn() {
   const [email,setEmail] = useState('');
